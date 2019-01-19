@@ -8,7 +8,7 @@
   
   
   
-  <title>标签: ... | Hexo</title>
+  <title>标签: ... | 猫の博客</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -20,6 +20,8 @@
     console.log('\n%c Hexo-theme-bmw v4.0 ' + '%c 🎉 https://github.com/dongyuanxin/theme-bmw 🎉\n' + '\n%c View demo online ' + '%c 🔍 https://godbmw.com/ 🔍  \n' , 'color: #fadfa3; background: #030307; padding:3px 0;', '', 'color: #fadfa3; background: #030307; padding:3px 0;', '');
   </script>
 
+  
+    <meta name="description" content="猫の博客，一个很樱的博客，我最大的梦想就是有一个胸大的女朋友...">
   
 
   
@@ -183,7 +185,7 @@
   <article class="posts-collapse">
     <header>
       <h2>
-        <a href="/2019/01/19/hello-world/">
+        <a href="/hello-world.html">
           <span>文章标题</span>
         </a>
       </h2>
@@ -348,6 +350,33 @@ document.querySelector(".back-to-top").addEventListener("click", backToTop, fals
     
 
     <script src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js" async></script>
+<script async>
+  let fancyTimer = setInterval(function(){
+    if(!window.$){
+      return;
+    }
+    $(document).ready(function() {
+      $(".post img").each(function () {
+        if($(this).parent().get(0).tagName.toLowerCase() === "a") {
+          return;
+        }
+        // $(this).attr("data-fancybox", "gallery"); // if you add 'data-fancybox', img will display after showed
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "gallery");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      });
+      
+      clearInterval(fancyTimer);
+    });
+  }, 10);
+</script>
+
+    
+  </body>
+
+</html>
+s" async></script>
 <script async>
   let fancyTimer = setInterval(function(){
     if(!window.$){
