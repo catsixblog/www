@@ -8,7 +8,7 @@
   
   
   
-  <title>标签: ... | 猫の博客</title>
+  <title>标签 | 猫の博客</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -163,44 +163,24 @@
   })
 </script>
 
-      <div class="container">
-  <div class="timeline">
-  <span class="archive-move-on"></span>
-  <span class="archive-page-counter">
-    
-      <span>当前位于 1/1 页</span>    
-  </span>
-  
-  
-    <div class="collection-title">
-      <h2>
-        
-          <span>标签 : ...</span>
-        
-      </h2>
-    </div>
-  
-  
-  
-  <article class="posts-collapse">
-    <header>
-      <h2>
-        <a href="/hello-world.html">
-          <span>文章标题</span>
-        </a>
-      </h2>
-      <div class="post-meta">
-        01-19
-      </div>
-    </header>
-  </article>
-  
+      
+<div class="container tag-index">
+  <div>
+    <h3>
+      共计 11 个标签
+    </h3>
+    <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/游戏修改/">游戏修改</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/乱七八糟/">乱七八糟</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/动漫图片/">动漫图片</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ACG/">ACG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/王者荣耀/">王者荣耀</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/闲聊文章/">闲聊文章</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/动漫分享/">动漫分享</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/18/">18+</a><span class="tag-list-count">1</span></li></ul>
+  </div>
 </div>
-  <nav class="page-navigation">
-    
-    
-  </nav>
-</div>
+
+
+
+
+
+
+
+
+
 
       <footer>
   <p class="site-info">
@@ -350,33 +330,6 @@ document.querySelector(".back-to-top").addEventListener("click", backToTop, fals
     
 
     <script src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js" async></script>
-<script async>
-  let fancyTimer = setInterval(function(){
-    if(!window.$){
-      return;
-    }
-    $(document).ready(function() {
-      $(".post img").each(function () {
-        if($(this).parent().get(0).tagName.toLowerCase() === "a") {
-          return;
-        }
-        // $(this).attr("data-fancybox", "gallery"); // if you add 'data-fancybox', img will display after showed
-        var element = document.createElement("a");
-        $(element).attr("data-fancybox", "gallery");
-        $(element).attr("href", $(this).attr("src"));
-        $(this).wrap(element);
-      });
-      
-      clearInterval(fancyTimer);
-    });
-  }, 10);
-</script>
-
-    
-  </body>
-
-</html>
-s" async></script>
 <script async>
   let fancyTimer = setInterval(function(){
     if(!window.$){
